@@ -7,7 +7,6 @@
   <body>
     <p>Random Word (attempt#{{request.session.count}})</p>
     <p>{{ request.session.word }}</p>
-    <p>{{unique_id}}</p>
 
     <form action="/random" method="POST">
       {% csrf_token %}
